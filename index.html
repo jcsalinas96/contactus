@@ -2,9 +2,77 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>index</title>
+<title>HTML Forms</title>
+<link rel="stylesheet" href="stylesheet.css">
+	
 </head>
 
 <body>
+	<canvas id="myCanvas" width="250" height="150" style="border:4px solid rgba(1,1,1,1.00); border-radius: 8px;">
+	Your browser does not support the HTML canvas tag.</canvas>
+
+	<script>
+		const canvas = document.getElementById("myCanvas");
+		const ctx=canvas.getContext("2d");
+
+		ctx.font="30px Verdana";
+		ctx.fillStyle = "green";
+		ctx.textAlign = "center";
+		ctx.textBaseline = "bottom";
+		ctx.fillText("Big Adventures", canvas.width/2, canvas.height/2);
+
+		ctx.font="30px Verdana";
+		ctx.fillStyle = "blue";
+		ctx.textAlign = "center";
+		ctx.textBaseline = "top";
+		ctx.fillText("Small Budget", canvas.width/2, canvas.height/2);
+	</script>
+	
+	<main>
+		<div id="container">
+			<h2>Contact Us</h2>
+				<form>
+					<label for="fname">First Name</label><br>
+					<input type="text" id="fname" name="fname" value="John"><br><br>
+					<label for="lname">Last Name</label><br>
+					<input type="text" id="lname" name="lname" value="Doe"><br><br>
+				</form>
+
+				<h2>Sign Up for Our Newsletter</h2>
+				<form action="/action_page.php">
+					<label for="email">Enter your email:</label>
+					<input type="email" id="email" name="email">
+					<input type="submit" value="Submit">
+				</form>
+
+				<h2>How did you hear about us?</h2>
+				<form>
+					<input type="checkbox" id="source1" name="Source1" value="Friend">
+					<label for="source1">Friend</label><br>
+					<input type="checkbox" id="source2" name="source2" value="Social Media">
+					<label for="source2">Social Media</label><br>
+					<input type="checkbox" id="source3" name="source3" value="Website">
+					<label for="source3">Website</label><br>
+					<input type="checkbox" id="source4" name="source4" value="Other">
+					<label for="source4">Other</label>
+				</form>	
+					<br><br>
+				<form>
+					<input type="submit" value="Submit" style="border-radius: 8px">
+					<input type="reset" value="Reset" style="border-radius: 8px">
+				</form>
+				<br>
+			</div>
+			
+		</main>
+		
+		<audio controls>
+			<source src="assets/clapping2.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+		
+	<footer>
+   		 <p>&copy; 2025 Jennifer Salinas</p>
+  	</footer>
 </body>
 </html>

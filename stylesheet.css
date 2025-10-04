@@ -1,3 +1,26 @@
 @charset "utf-8";
 /* CSS Document */
 
+#container{
+	
+	border:solid 3px rgba(0,0,0,1.00);
+	border-radius: 8px;
+	width: 500px; 
+	height: 480px;
+	margin: 0 auto;
+	padding-left: 5px;
+	background-color: rgba(181,220,243,1.00);
+}
+canvas{
+	background-color: rgba(244,131,133,1.00);
+}
+
+footer{
+	text-align: center;
+	padding: 15px;
+	background-color: #333;
+	color: white;
+	clear: both;
+	bottom: 0;
+	width: 100%;
+}
